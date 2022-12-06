@@ -1,0 +1,55 @@
+{
+  "name": "io.cordova.hellocordova",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-audio-recorder-plugin": "^0.0.1",
+    "cordova-browser": "^6.0.0",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-advanced-http": "^3.3.1",
+    "cordova-plugin-audio-recorder": "^1.1.0",
+    "cordova-plugin-file": "^7.0.0",
+    "cordova-plugin-media": "^6.1.0",
+    "cordova-plugin-media-capture": "^4.0.0",
+    "cordova-plugin-x-socialsharing": "^6.0.4",
+    "es6-promise-plugin": "^4.2.2",
+    "iod": "^0.0.99"
+  },
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-x-socialsharing": {
+        "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+        "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly."
+      },
+      "cordova-plugin-audio-recorder": {},
+      "cordova-audio-recorder-plugin": {},
+      "cordova-plugin-media-capture": {},
+      "cordova-plugin-advanced-http": {
+        "ANDROIDBLACKLISTSECURESOCKETPROTOCOLS": "SSLv3,TLSv1"
+      },
+      "cordova-plugin-file": {},
+      "cordova-plugin-media": {
+        "KEEP_AVAUDIOSESSION_ALWAYS_ACTIVE": "NO"
+      }
+    }
+  },
+  "dependencies": {
+    "gradle": "^1.2.4"
+  }
+}
